@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.videos-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.videos-list__video {
+  width: 50%;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .videos-list {
+  }
+
+  .videos-list__video {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .videos-list {
+  }
+
+  .videos-list__video {
+    width: 25%;
+  }
+}

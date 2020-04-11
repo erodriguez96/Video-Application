@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .videos-list
+    each video in videos
+      .videos-list__video
+        a(href=video.url)= video.name
+
