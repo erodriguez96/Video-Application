@@ -4,5 +4,9 @@ block content
   .videos-list
     each video in videos
       .videos-list__video
-        a(href=video.url)= video.name
+        video(controls='controls')
+          source(src=video.url, type='video/mp4')
+            
+      
+        //- a(href=video.url)= video.name
 

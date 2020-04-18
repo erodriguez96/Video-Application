@@ -1,1 +1,4 @@
 node_modules
+.vscode/*
+peliculas_y_series
+repositories/data.db

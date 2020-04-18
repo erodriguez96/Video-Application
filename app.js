@@ -18,9 +18,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/videos', express.static(path.join(__dirname, 'public', 'peliculas_y_series')));
 
 app.use('/', indexRouter);
-app.use('/videos', videosRouter);
+app.use('/api/videos', videosRouter);
 
 // catch 404 and forward to error handler
 app.use(function (request, response, next) {
